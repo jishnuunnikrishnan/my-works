@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>
+         register
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+         <div class="container">
+             <div id="branding">
+                 <h1> MY COLLEGE</h1>
+             </div>
+             <nav>
+                 <ul>
+                     <li> 
+                         <a href="index.html">HOME</a>
+                     </li>
+                 </ul>
+             </nav>
+         </div>   
+        </header>
+        <section id="regform">
+            <br><br>
+           <center><h2>DEGREE REGISTRATION FORM</h2></center>
+            
+<center>
+    <form autocomplete="off" onsubmit="alert( 'your registration is successful')" >
+        <table>
+            <tr>
+                <td  height="50px">enter name</td>
+                <td width="200px" height="50px"><input type="text" name="name" placeholder="enter name" required></td>
+                <td width="200px" height="50px">enter father's name</td>
+                <td width="200px" height="50px"><input type="text" name="fname" placeholder="enter father name" required></td>
+        </tr>
+        <tr>
+                <td width="200px" height="50px">enter address</td>
+                <td width="200px" height="50px"><textarea name="address" required></textarea></td>
+                <td width="200px" height="50px">Date of birth</td>
+                <td width="200px" height="50px"><input type="date" name="gender"  required></td>
+        </tr>
+        <tr>
+                <td width="200px" height="50px">higher secondary score</td>
+                <td width="200px" height="50px"><input type="number" name="mark" placeholder="mark in percentage" required></td>
+                <td width="200px" height="50px">select course</td>
+             <td width="200px" height="50px">
+                 <select name="course" required>
+                     <option>computer science</option>
+                     <option>B com</option>
+                     <option>History</option>
+                     
+        </select>
+        </td>
+        
+        </tr>
+        <tr>
+                <td width="200px" height="50px">e mail</td>
+                <td width="200px" height="50px"><input type="email" name="email" placeholder="enter e mail" required></td>
+                <td width="200px" height="50px">enter mobile no:</td>
+                <td width="200px" height="50px"><input type="tel" name="mno" pattern="[0-9]{10}"  placeholder="enter mobile number" required></td>
+        </tr>
+        <tr>
+            <td width="200px" height="50px">select caste category</td>
+            <td width="200px" height="50px"><input list="platforms" placeholder="enter caste category" required />
+            <datalist id="platforms">
+                <option>sc</option>
+                <option>st</option>
+                <option>oec</option>
+                <option>obc</option>
+                <option>general</option>
+            </datalist>
+            </td>
+        </tr>
+            <tr>
+            
+                <td width="230px" height="50px"><input type="checkbox" name="check" placeholder="enter e mail" required>all entered information is true</td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="sub" value="submit" style="margin-left: 150%;color: rgb(11, 218, 45);">
+        </td></tr><table>
+        
+    </form>
+</center>
+        </section>
+        
+        <footer>
+            <address>
+                Newyork junction, USA<br>
+                email:myschool@gmail.com<br>
+                phone:98989898
+            </address>
+        </footer>
+    </body>
+</html>
